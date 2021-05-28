@@ -6,6 +6,8 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
+import javax.management.RuntimeErrorException;
+
 
 
 public class test01 {
@@ -15,12 +17,13 @@ public class test01 {
         
        System.out.println("몇장?(1~10) :");
        int howManyNumber = sc.nextInt();
+       if(howManyNumber==0)throw new RuntimeErrorException(null);
        int howManyCount = 0;
         Map<Integer,int[]> arrr = new HashMap<>();
         //List<int[]> arr1 =new ArrayList<>();
 
         int [] num1 = null;
-        int [] preNum = {2,9,10,16,35,37};
+        int [] preNum = {19,21,30,33,34,42};
 
         System.out.println("중복 가능 개수: ");
         int duplicationNumber = sc.nextInt();
