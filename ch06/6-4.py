@@ -21,7 +21,10 @@ def quik_sort(array, start,end):
         else:
             array[left],array[right] = array[right],array[left]
 
-    
+    quik_sort()    
+
+
+
 
 quik_sort(array,0,len(array)-1)
 print(array)

@@ -5,12 +5,7 @@ import javax.sound.midi.Soundbank;
 
 public class test03 {
     public static void main(String[] args) {
-    
-
         System.out.println(gcd1(60, 24));
-
-
-
     }
 
     public static int gcd(int a, int b){
